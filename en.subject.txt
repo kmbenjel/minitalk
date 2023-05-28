@@ -1,13 +1,8 @@
 Minitalk
 
-Summary:
-The purpose of this project is to code a small data exchange program
-using UNIX signals.
-Version: 2
 
-2
+Chapter II
 
-Chapter II
 Common Instructions
 • Your project must be written in C.
 • Your project must be written in accordance with the Norm. If you have bonus
@@ -36,16 +31,11 @@ won’t have to be submitted and won’t be graded. It will give you a chance
 to easily test your work and your peers’ work. You will find those tests especially
 useful during your defence. Indeed, during defence, you are free to use your tests
 and/or the tests of the peer you are evaluating.
-• Submit your work to your assigned git repository. Only the work in the git repository will be graded. If Deepthought is assigned to grade your work, it will be done
-3
-
-Minitalk
-after your peer-evaluations. If an error happens in any section of your work during
+• Submit your work to your assigned git repository. Only the work in the git repository will be graded. If Deepthought is assigned to grade your work, it will be done after your peer-evaluations. If an error happens in any section of your work during
 Deepthought’s grading, the evaluation will stop.
 
-4
+Chapter III
 
-Chapter III
 Project instructions
 • Name your executable files client and server.
 • You have to turn in a Makefile which will compile your source files. It must not
@@ -72,9 +62,8 @@ functions:
 ◦ usleep
 ◦ exit
 
-5
+Chapter IV
 
-Chapter IV
 Mandatory Part
 You must create a communication program in the form of a client and a server.
 • The server must be started first. After its launch, it has to print its PID.
@@ -97,28 +86,13 @@ UNIX signals.
 Linux system does NOT queue signals when you already have pending
 signals of this type! Bonus time?
 
-6
+Chapter V
 
-Chapter V
 Bonus part
+
 Bonus list:
 • The server acknowledges every message received by sending back a signal to the
 client.
 • Unicode characters support!
 
-The bonus part will only be assessed if the mandatory part is
-PERFECT. Perfect means the mandatory part has been integrally done
-and works without malfunctioning. If you have not passed ALL the
-mandatory requirements, your bonus part will not be evaluated at all.
 
-7
-
-Chapter VI
-Submission and peer-evaluation
-Turn in your assignment in your Git repository as usual. Only the work inside your
-repository will be evaluated during the defense. Don’t hesitate to double check the
-names of your files to ensure they are correct.
-
-8
-
-
