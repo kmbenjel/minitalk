@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/28 18:30:20 by kbenjell          #+#    #+#             */
-/*   Updated: 2023/06/02 20:32:28 by kbenjell         ###   ########.fr       */
+/*   Created: 2023/06/02 20:34:06 by kbenjell          #+#    #+#             */
+/*   Updated: 2023/06/02 20:34:45 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_error(void)
 	exit(1);
 }
 
-void	ft_send(int pid, char c)
+void	ft_send(int pid, unsigned char c)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 #    By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/13 20:05:34 by kbenjell          #+#    #+#              #
-#    Updated: 2022/12/07 03:09:05 by kbenjell         ###   ########.fr        #
+#    Updated: 2023/06/02 20:32:12 by kbenjell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,16 +66,16 @@ OBJ_BONUS = $(SRC_BONUS:%.c=%.o)
 all : $(NAME)
 
 $(NAME) : $(OBJ)
-	$(AR) $(NAME) $(OBJ)
+	@	$(AR) $(NAME) $(OBJ)
 
 bonus : $(OBJ_BONUS)
 	$(AR) $(NAME) $(OBJ_BONUS)
 
 clean :
-	$(RM) $(OBJ) 
-	$(RM) $(OBJ_BONUS)
+	@	$(RM) $(OBJ) 
+	@	$(RM) $(OBJ_BONUS)
 
 fclean : clean
-	$(RM) $(NAME)
+	@	$(RM) $(NAME)
 
 re : fclean all bonus

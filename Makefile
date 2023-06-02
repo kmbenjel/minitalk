@@ -6,7 +6,7 @@
 #    By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/02 10:23:49 by kbenjell          #+#    #+#              #
-#    Updated: 2023/06/02 20:30:24 by kbenjell         ###   ########.fr        #
+#    Updated: 2023/06/02 20:31:36 by kbenjell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,13 +30,13 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(SSRC) $(CSRC)
-	@	@ make -C libft/
+	@	make -C libft/
 	@	$(CC) $(CFLAGS) $(SSRC) $(LIBFT) -o $(SERVER)
 	@	$(CC) $(CFLAGS) $(CSRC) $(LIBFT) -o $(CLIENT)
 	@	echo "\033[32m make: OK \033[0m"
 
 clean:
-	@	@ make clean -C libft/ 
+	@	make clean -C libft/ 
 	@	echo "\033[32m clean: OK \033[0m"
 
 fclean: clean
