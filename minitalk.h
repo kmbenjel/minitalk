@@ -9,3 +9,13 @@
 /*   Updated: 2023/06/02 11:50:33 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef MINITALK_H
+# define MINITALK_H
+
+# include "./ft_printf/ft_printf.h"
+# include "./libft/libft.h"
+# include <signal.h>
+# include <unistd.h>
+
+#endif
