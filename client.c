@@ -6,11 +6,17 @@
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:30:20 by kbenjell          #+#    #+#             */
-/*   Updated: 2023/05/28 18:30:34 by kbenjell         ###   ########.fr       */
+/*   Updated: 2023/06/02 19:58:55 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
+
+void	ft_error(void)
+{
+	write(2, "\tERROR!\n", 8);
+	exit(1);
+}
 
 void	ft_send(int pid, char c)
 {
@@ -33,12 +39,6 @@ void	ft_send(int pid, char c)
 		i++;
 		c /= 2;
 	}
-}
-
-void	ft_error(void)
-{
-	write(2, "\tERROR!\n", 8);
-	exit(1);
 }
 
 int	ft_isspace(char c)

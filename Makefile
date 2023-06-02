@@ -6,7 +6,7 @@
 #    By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/02 10:23:49 by kbenjell          #+#    #+#              #
-#    Updated: 2023/06/02 19:49:20 by kbenjell         ###   ########.fr        #
+#    Updated: 2023/06/02 19:58:00 by kbenjell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,8 @@ NAME = minitalk
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
+RM = rm -f
+
 all: $(NAME)
 
 $(NAME): $(SSRC) $(CSRC)
@@ -33,11 +35,12 @@ $(NAME): $(SSRC) $(CSRC)
 	@	echo "\033[32m make: OK \033[0m"
 
 clean:
-	@	$(RM) $(OBJ)
+	@	make clean -C libft/ 
 	@	echo "\033[32m clean: OK \033[0m"
 
 fclean: clean
-	@	$(RM) $(NAME)
+	@	$(RM) server client
+	@	make fclean -C libft
 	@	echo "\033[32m fclean: OK \033[0m"
 
 re: fclean all
