@@ -6,7 +6,7 @@
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/19 09:18:43 by kbenjell          #+#    #+#             */
-/*   Updated: 2022/11/19 10:43:02 by kbenjell         ###   ########.fr       */
+/*   Updated: 2023/06/02 20:04:13 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	ft_sign(char a)
 	return (0);
 }
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	char	*str;
 
