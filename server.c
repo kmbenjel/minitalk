@@ -6,7 +6,7 @@
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:30:40 by kbenjell          #+#    #+#             */
-/*   Updated: 2023/06/02 19:50:26 by kbenjell         ###   ########.fr       */
+/*   Updated: 2023/06/02 20:12:15 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,4 +39,5 @@ int	main(void)
 	signal(SIGUSR2, ft_handler);
 	while (1)
 		pause();
+	return (0);
 }
