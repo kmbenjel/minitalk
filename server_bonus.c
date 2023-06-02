@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   server_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:30:40 by kbenjell          #+#    #+#             */
-/*   Updated: 2023/06/02 20:17:27 by kbenjell         ###   ########.fr       */
+/*   Updated: 2023/06/02 20:39:02 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_handler(int signum)
 {
-	static int	power;
-	static char	c;
+	static int				power;
+	static unsigned char	c;
 
 	if (power == 0)
 		power++;
