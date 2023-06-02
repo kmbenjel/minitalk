@@ -10,9 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-
-
-NAME = 
+SERVER = server
+CLIENT = client
+LIBFTPRINTF = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar -rc
