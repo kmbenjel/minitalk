@@ -6,7 +6,7 @@
 #    By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/02 10:23:49 by kbenjell          #+#    #+#              #
-#    Updated: 2023/06/02 10:23:57 by kbenjell         ###   ########.fr        #
+#    Updated: 2023/06/02 19:49:20 by kbenjell         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ CSRC = client.c
 SSRC_B = server_bonus.c 
 CSRC_B = client_bonus.c
 
-LIBFT = libft.a
+LIBFT = libft/libft.a
 
 NAME = minitalk
 OBJ = $(SRC:.c=.o)

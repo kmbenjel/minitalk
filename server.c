@@ -6,7 +6,7 @@
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:30:40 by kbenjell          #+#    #+#             */
-/*   Updated: 2023/06/02 10:24:11 by kbenjell         ###   ########.fr       */
+/*   Updated: 2023/06/02 19:50:26 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(void)
 {
 	ft_putstr_fd("PID: ", 1);
 	ft_putnbr_fd(getpid(), 1);
-	ft_putchar_fd('\n');
+	ft_putchar_fd('\n', 1);
 	signal(SIGUSR1, ft_handler);
 	signal(SIGUSR2, ft_handler);
 	while (1)
