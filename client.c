@@ -6,7 +6,7 @@
 /*   By: kbenjell <kbenjell@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 18:30:20 by kbenjell          #+#    #+#             */
-/*   Updated: 2023/06/02 19:58:55 by kbenjell         ###   ########.fr       */
+/*   Updated: 2023/06/02 20:07:44 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int	ft_check_pid(const char *pid)
 	{
 		if (!ft_isdigit(pid[i]))
 			ft_error();
+		i++;
 	}
 	while (ft_isspace(pid[i]))
 		i++;
@@ -92,4 +93,5 @@ int	main(int ac, char **av)
 		usleep(300);
 		i++;
 	}
+	ft_send(pid, '\n');
 }
