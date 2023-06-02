@@ -9,3 +9,9 @@
 /*   Updated: 2023/05/28 18:30:34 by kbenjell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "minitalk.h"
+
+static void	handler(int signum, siginfo_t *infom void *context)
+{
+}
