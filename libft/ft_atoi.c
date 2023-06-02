@@ -38,7 +38,7 @@ int	ft_isspace(char c)
 int	ft_atoi(const char *str)
 {
 	char			*a;
-	unsigned int	i;
+	unsigned long	i;
 	int				sign;
 
 	a = (char *)str;
@@ -55,8 +55,9 @@ int	ft_atoi(const char *str)
 	}
 	while (ft_isdigit(*a))
 	{
-		i *= 10;
-		i += *a - 48;
+		i = i * 10 + (*a) - 48;
+		if (i > INT_MAX)
+			return (0);
 		a++;
 	}
 	return (i * sign);
