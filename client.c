@@ -19,10 +19,17 @@ void	ft_send(int pid, char c)
 	i = 0;
 	while (i < 8)
 	{
-		if (c % 2)
-			kill(pid, SIGUSR1);
+		if (c % 2 == 0)
+		{
+			if (kill(pid, SIGUSR1) == -1)
+				ft_error();
+		}
 		else
-			kill(pid, SIGUSR2);
+		{
+			if (kill(pid, SIGUSR2) == -1)
+				ft_error();
+		}
+		usleep(200);
 		i++;
 		c /= 2;
 	}
@@ -74,12 +81,15 @@ int	main(int ac, char **av)
 
 	if (ac != 3 || av[1][0] == 0 || av[2][0] == 0)
 		ft_error();
-	ft_check_pid();
+	ft_check_pid(av[1]);
 	pid = ft_atoi(av[1]);
+	if (pid <= 0)
+		ft_error();
 	i = 0;
 	while (av[2][i])
 	{
 		ft_send(pid, av[2][i]);
+		usleep(300);
 		i++;
 	}
 }
