@@ -14,20 +14,23 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 SSRC = server.c
 CSRC = client.c
+
 SSRC_B = server_bonus.c 
-CSRC_B = client_bonus.c 
+CSRC_B = client_bonus.c
+
+LIBFT = libft.a
+
+NAME = minitalk
 OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all: $(NAME)
 
-
-$(NAME): $(OBJ)
-	@	$(AR) $(NAME) $(OBJ)
+$(NAME): $(SSRC) $(CSRC)
+	@	make -C libft/
+	@	$(CC) $(CFLAGS) $(SSRC) $(LIBFT) -o server
+	@	$(CC) $(CFLAGS) $(CSRC) $(LIBFT) -o client
 	@	echo "\033[32m make: OK \033[0m"
-
-%.o: %.c
-	@	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	@	$(RM) $(OBJ)
